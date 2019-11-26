@@ -610,11 +610,11 @@ filter: grayscale(0%);
 <div class="home-page">
 <div class="nvr">Afnan Aviation<br/><div class="nvr-lcns-no">Hajj License No. 0516</div></div>
 
-<div style="border:0px solid red; position:absolute; bottom:8px; left:10px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/bf161cf74e5a5329ef89b9596bee06f8c56bb1bc/others-logo/Biman.svg) no-repeat bottom; background-size:100%; width:35px; height:50px;"></div>
+<div class="biman" style="border:0px solid red; position:absolute; bottom:8px; left:10px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/bf161cf74e5a5329ef89b9596bee06f8c56bb1bc/others-logo/Biman.svg) no-repeat bottom; background-size:100%; width:35px; height:50px;"></div>
 
-<div style="border:0px solid red; position:absolute; bottom:8px; display:flex; align-items:center; justify-content:center; width:100%; height:35px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/e16d1f908c5bc1bfc7056e7468e30324e96aee9c/others-logo/ATAB.svg) no-repeat bottom; background-size:120px;"></div>
+<div class="atab" style="border:0px solid red; position:absolute; bottom:8px; display:flex; align-items:center; justify-content:center; width:100%; height:35px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/e16d1f908c5bc1bfc7056e7468e30324e96aee9c/others-logo/ATAB.svg) no-repeat bottom; background-size:120px;"></div>
 
-<div style="border:0px solid red; position:absolute; bottom:8px; right:10px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/adff717e0cdb38ce9978e7b69c0ea455d7f50296/others-logo/HAAB.svg) no-repeat bottom; background-size:100%; width:45px; height:45px;"></div>
+<div class="haab" style="border:0px solid red; position:absolute; bottom:8px; right:10px; background:url(https://rawcdn.githack.com/afnanaviation/afnanaviation.github.io/adff717e0cdb38ce9978e7b69c0ea455d7f50296/others-logo/HAAB.svg) no-repeat bottom; background-size:100%; width:45px; height:45px;"></div>
 </div>
 
 <!-- body content start -->
@@ -798,6 +798,37 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active-nav-a";
   });
 }
+</script>
+
+
+<script>
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.biman').fadeOut(600);
+  } else {
+    $('.biman').fadeIn();
+  }
+});
+</script>
+
+<script>
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.atab').fadeOut(600);
+  } else {
+    $('.atab').fadeIn();
+  }
+});
+</script>
+
+<script>
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.haab').fadeOut(600);
+  } else {
+    $('.haab').fadeIn();
+  }
+});
 </script>
 
 </body>
